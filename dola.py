@@ -335,8 +335,8 @@ class DoLa:
                     print(f"\njs_divs:\n{js_divs}\n")
 
                     # 6. Reduce the batchmean
-                    # js_divs = js_divs.mean(-1)  # shape: (num_premature_layers,)
-                    js_divs = torch.median(js_divs, dim=-1).values  # shape: (num_premature_layers,)
+                    js_divs = js_divs.mean(-1)  # shape: (num_premature_layers,)
+                    # js_divs = torch.median(js_divs, dim=-1).values  # shape: (num_premature_layers,)
                     premature_layer = candidate_premature_layers[int(js_divs.argmax().cpu().item())]
                     premature_layer_dist[premature_layer] += 1
 
