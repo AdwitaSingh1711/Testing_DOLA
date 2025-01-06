@@ -270,6 +270,7 @@ class DoLa:
                 # print(type(early_exit_layers))
 
                 dict_outputs, outputs = self.model(
+                    # embeddings should be going here (i think)
                     input_ids=input_ids,
                     return_dict=True,
                     output_attentions=False,

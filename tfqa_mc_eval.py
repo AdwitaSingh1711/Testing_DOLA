@@ -215,6 +215,8 @@ def MC_calcs(scores_true, scores_false, ref_true, ref_best):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--encoder-name",type=str, default="distilroberta-base")
+    # model-name is decoder name
     parser.add_argument("--model-name", type=str, default="huggyllama/llama-7b")
     parser.add_argument("--num-gpus", type=str, default="1")
     parser.add_argument("--max_gpu_memory", type=int, default=27)
