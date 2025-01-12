@@ -216,7 +216,7 @@ class DoLa:
                 result_dict = {}
                 premature_layers = []
 
-                print("\nBBBBBBBBBBBBBBBBBBBBBBBBB")
+                # print("\nBBBBBBBBBBBBBBBBBBBBBBBBB")
                 print("\nCandidate premature layer:", candidate_premature_layers)
                 print(type(candidate_premature_layers))
                 print("\nmature layer:", mature_layer)
